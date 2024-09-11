@@ -1,0 +1,105 @@
+.header {
+    display: flex;
+    margin-right: 32px;
+    justify-content: space-between;
+    /* width: 1292px; */
+    max-height: 112px;
+}
+
+.nav__navbar {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 4px;
+    gap: 0px 8px;
+    height: 24px;
+}
+
+.nav__navbar a {
+    text-decoration: none;
+    color: #7F7F91;
+    margin: 0;
+    padding: 0;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.nav__navbar img {
+    width: 16px;
+    height: 16px;
+}
+
+.nav__h1 {
+    margin: 0;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #1D222F;
+}
+
+.nav__profile-block {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 42px;
+    border-style: none;
+    background-color: #F4F6FA;
+    cursor: pointer;
+}
+
+
+.nav__text-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+    margin-right: 100px;
+
+}
+
+.nav__text-profile p {
+    margin: 0;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #1D222F;
+}
+
+.nav__text-profile span {
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #006FAC;
+    text-transform: uppercase;
+}
+
+
+@font-face {
+    font-family: "Helios Cond";
+    src: url("../fonts/ofont.ru_Helios Cond.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* @media (min-width: 1600px) {
+    .header {
+        width: 100vmax;
+    }
+} */
+
+@media (max-width: 1600px){
+    .header {
+        display: flex;
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 1440px){
+    .header {
+        display: flex;
+        flex-shrink: 1;
+    }
+}

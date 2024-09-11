@@ -50,7 +50,7 @@
 }
 
 .nav__menu-item {
-    text-decoration: none;
+    list-style-type: none;
     display: flex;
     gap: 0 12px;
     width: 196px;
@@ -62,8 +62,8 @@
     height: 24px;
 }
 
-.nav__menu-item li {
-    list-style-type: none;
+.nav__menu-item a {
+    text-decoration: none;
     font-family: "Helios Cond", sans-serif;
     font-weight: 400;
     font-size: 18px;

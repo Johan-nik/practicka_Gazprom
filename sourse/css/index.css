@@ -16,13 +16,13 @@ body {
 
 @media (min-width: 1600px) {
     .page {
-        width: auto;
+        width: 100%;
     }
 }
 
 
 @media (max-width: 1600px){
     .page {
-        width: auto;
+        width: 100%;
     }
 }

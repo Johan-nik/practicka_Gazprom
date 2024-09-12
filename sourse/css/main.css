@@ -143,17 +143,28 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .main__card-button {
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    position: absolute;
-    bottom: 24px;
-    right: 24px;
+    align-items: center;
+    min-height: 32px;
+}
+
+.main__card-button-info {
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #006FAC;
+    margin-right: 4px;
 }
 
 .main__card-button button {
+    width: 32px;
+    height: 32px;
     border-style: none;
     background: none;
     padding: 0;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
 }
 
 .main__card-button button img{ 

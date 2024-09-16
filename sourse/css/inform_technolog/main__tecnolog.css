@@ -1,0 +1,168 @@
+.main__info {
+    margin-top: 36px;
+    margin-bottom: 2px;
+}
+
+.main__title {
+    margin-top: 24px;
+    font-size: 28px;
+}
+
+.main__card-collection {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main__card {
+    height: 244px;
+}
+
+.main__title-support {
+    margin: 0;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color: #1D222F;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.main__card-collection-support {
+    margin-right: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px 10px;
+}
+
+.main__card-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 32px;
+}
+
+
+/* Левое боковое окно по поиску услуг */
+.main__aside-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.main__aside-search-icon {
+    width: 160px;
+    height: 160px;
+}
+
+.main__aside-search-icon img {
+    margin: 36px;
+    width: 88px;
+    height: 88px;
+}
+
+.main__aside-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.main__aside-title {
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #002033;
+}
+
+.main__aside-hint-text {
+    margin: 0;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    text-align: center;
+    color: #00203399;
+}
+
+.main__aside-button-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.main__aside-button-register {
+    height: 40px;
+    background-color: #006FAC;
+    border-radius: 8px;
+    border-style: none;
+    padding: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.main__aside-button-chapter {
+    height: 40px;
+    background-color: #E9EDF4;
+    border-radius: 8px;
+    border-style: none;
+    padding: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1D222F;
+}
+
+
+
+@media (max-width: 1450px){
+    .main__form-search {
+        width:auto;
+    }
+    .main {
+        width:auto;
+    }
+
+    .main__card-collection-support {
+        margin-right: 32px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 10px;
+    }
+}
+
+@media (max-width: 1200px){
+    .main__form-search {
+        width:auto;
+    }
+    .main {
+        width:auto;
+    }
+
+    .main__card-collection {
+        margin-top: 24px;
+        margin-right: 32px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px 10px;
+    }
+
+    .main__card-collection-support {
+        margin-right: 32px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px 10px;
+    }
+}

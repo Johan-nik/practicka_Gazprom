@@ -1,0 +1,161 @@
+.main__form {
+    background-color: #FFFFFF;
+    margin-top: 24px;
+    width: 869px;
+    min-height: 1007px;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.main__form-manual {
+    background-color: #F4F6FA;
+    height: 222px;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.main__form-manual-title-info {
+    display: grid;
+    grid-template-columns: 536px 1fr;
+    gap: 12px;
+    border-bottom: 1px solid;
+    border-color: #C9C9D780;
+    height: 90px;
+}
+
+.main__form-manual-info {
+    margin: 0;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #292D32;
+}
+
+.main__form-manual-title {
+    margin: 0;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #1D222F;
+}
+
+.main__form-manual-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main__form-manual-support {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.main__form-manual-support img {
+    width: 24px;
+    height: 24px;
+}
+
+.main__form-manual-support-title {
+    margin: 0;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #1D222F;
+}
+
+.main__form-manual-support-text {
+    padding: 0;
+    margin: 0;
+    padding-left: 16px;
+}
+
+.main__form-manual-support-text li {
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+
+.main__form-input-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.main__form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main__form-input label {
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #292D32;
+}
+
+.main__form-input span {
+    color: #006FAC;
+}
+
+.main__form-input select {
+    border: #E1E5EC 1px solid;
+    height: 40px;
+    border-radius: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #C9C9D7;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    appearance: none;
+    background-image: url(../../../../image/inform_technolog/technical-support-img/request-inform__technolog-img/request-it__main/arrow-circle-left.svg);
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: center;
+}
+
+.main__form-input option {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 4px;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #002033;
+}
+
+.selected {
+    display: none;
+}
+
+#employee-it {
+    color: #1D222F;
+}
+
+.main__form-input textarea {
+    height: 137px;
+    padding: 8px 12px 8px 12px;
+    border-radius: 8px;
+    border: #E1E5EC 1px solid;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #C9C9D7;
+}

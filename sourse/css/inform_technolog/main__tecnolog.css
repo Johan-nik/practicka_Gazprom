@@ -14,10 +14,6 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.main__card {
-    height: 244px;
-}
-
 .main__title-support {
     margin: 0;
     font-family: "Helios Cond", sans-serif;
@@ -30,7 +26,6 @@
 }
 
 .main__card-collection-support {
-    margin-right: 32px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px 10px;
@@ -108,6 +103,7 @@
     font-size: 14px;
     line-height: 24px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .main__aside-button-chapter {
@@ -123,6 +119,7 @@
     font-size: 14px;
     line-height: 24px;
     color: #1D222F;
+    cursor: pointer;
 }
 
 

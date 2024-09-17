@@ -1,0 +1,72 @@
+.main__card-collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 16px;
+}
+
+.main__card {
+    background-image: none;
+    border-style: none;
+    background-color: #F4F6FA;
+    height: 90px;
+    padding: 8px 0 8px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.main__card-info img {
+    width: 48px;
+    height: 48px;
+}
+
+.main__card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__card-button-title {
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1D222F;
+    text-align: left;
+}
+
+.main__card-button-info {
+    line-height: 24px;
+    width: auto;
+}
+
+@media (max-width: 1440px){
+    .main__form-search {
+        width:auto;
+    }
+    .main {
+        width:auto;
+    }
+
+    .main__card-collection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 16px;
+    }
+}
+
+@media (max-width: 1080px){
+    .main__form-search {
+        width:auto;
+    }
+    .main {
+        width:auto;
+    }
+
+    .main__card-collection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px 16px;
+    }
+}

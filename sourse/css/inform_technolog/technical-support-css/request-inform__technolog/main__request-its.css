@@ -1,7 +1,6 @@
 .main__form {
     background-color: #FFFFFF;
     margin-top: 24px;
-    width: 869px;
     min-height: 1007px;
     border-radius: 12px;
     padding: 24px;
@@ -97,6 +96,8 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    position: relative;
+    z-index: 10;
 }
 
 .main__form-input label {
@@ -129,6 +130,7 @@
     background-position-y: center;
 }
 
+
 .main__form-input option {
     padding-top: 4px;
     padding-bottom: 4px;
@@ -157,5 +159,91 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    color: #1D222F;
+}
+
+.main__form-input textarea::placeholder {
     color: #C9C9D7;
+  }
+
+
+
+.main__form-input-label {
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #292D32;
+    margin: 0;
+}
+
+#main__form-drop-box {
+    color: #1D222F;
+    min-height: 98px;
+    background-color: #C4E7FF33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    border: 1px #C4E7FF dashed;
+}
+
+#files-it {
+    width: 0.1px;
+     height: 0.1px;
+     opacity: 0;
+     position: absolute;
+     z-index: -10;
+}
+
+.main__form-input-label-support {
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7F7F91;
+    margin: 0;
+}
+
+.main__form-button {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+}
+
+.main__form-button-cancel {
+    height: 40px;
+    background-color: #E9EDF4;
+    border-radius: 8px;
+    border-style: none;
+    padding: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1D222F;
+    cursor: pointer;
+    min-width: 190px;
+}
+
+.main__form-button-create {
+    height: 40px;
+    background-color: #006FAC;
+    border-radius: 8px;
+    border-style: none;
+    padding: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer; 
+    min-width: 190px;
 }

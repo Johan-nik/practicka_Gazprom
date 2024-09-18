@@ -8,7 +8,7 @@
     background-image: none;
     border-style: none;
     background-color: #F4F6FA;
-    height: 90px;
+    min-height: 90px;
     padding: 8px 0 8px 0;
     display: flex;
     flex-direction: row;

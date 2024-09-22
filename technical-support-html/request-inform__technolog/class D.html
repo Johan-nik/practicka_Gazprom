@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="../../sourse/css/header.css">
     <link rel="stylesheet" href="../../sourse/css/main.css">
     <link rel="stylesheet" href="../../sourse/css/nav_menu-bar.css">
-    <link rel="stylesheet" href="../../sourse/css/inform_technolog/header__technolog.css">
     <link rel="stylesheet" href="../../sourse/css/inform_technolog/main__tecnolog.css">
     <link rel="stylesheet" href="../../sourse/css/inform_technolog/technical-support-css/request-inform__technolog/nav__menu-request-its.css">
-    <link rel="stylesheet" href="../../sourse/css/inform_technolog/technical-support-css/request-inform__technolog/main__request-its.css">
+    <link rel="stylesheet" href="../../sourse/css/inform_technolog/technical-support-css/request-inform__technolog/class_d.css">
     <title>Газпром</title>
 </head>
 
@@ -104,35 +103,52 @@
                                 </div>
                             </div>
                             <div class="main__form-input-list">
-                                <div class="main__form-input">
-                                    <label for="service-it">Услуга</label>
-                                    <select name="name-service" id="service-it" >
-                                        <option value="#" selected class="selected">Выберите услугу</option>
-                                        <option value="#">Увеличение объема почтового ящика</option>
-                                        <option value="#">Изменение структуры/должности</option>
-                                        <option value="#">Исправление проблем с кодировкой</option>
-                                        <option value="#">Исправление проблем с отправкой/получением писем</option>
-                                        <option value="#">Организация информационной рассылки</option>
-                                        <option value="#">Настройка почтовых клиентов</option>
-                                    </select>
+                                <div class="main__form-input-conteiner">
+                                    <p>Услуга</p>
+                                    <div class="itc-select" id="select-1">
+                                        <!-- Кнопка для открытия выпадающего списка -->
+                                        <button type="button" class="itc-select__toggle" name="provider" value="" data-select="toggle" data-index="-1">Выберите услугу</button>
+                                        <!-- Выпадающий список -->
+                                        <div class="itc-select__dropdown">
+                                          <ul class="itc-select__options">
+                                            <li class="itc-select__option" data-select="option" data-value="increase-the-volume" data-index="0">Увеличить объем почтового ящика</li>
+                                            <li class="itc-select__option" data-select="option" data-value="change-of-position" data-index="1">Изменение структуры/должности</li>
+                                            <li class="itc-select__option" data-select="option" data-value="encoding-problem" data-index="2">Проблемы с кодировкой</li>
+                                            <li class="itc-select__option" data-select="option" data-value="problem-with-emails" data-index="3">Проблемы с отправкой/получением писем</li>
+                                            <li class="itc-select__option" data-select="option" data-value="newsletter" data-index="4">Информационная рассылка</li>
+                                            <li class="itc-select__option" data-select="option" data-value="configuring-email-clients" data-index="5">Настройка почтовых клиентов</li>
+                                          </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="main__form-input">
-                                    <label for="employee-it">Заявка от <span>*</span></label>
-                                    <select name="name-employee" id="employee-it" >
-                                        <option value="#" selected class="selected">От своего имени</option>
-                                        <option value="#">Иван Антонов</option>
-                                        <option value="#">Иван Антонов</option>
-                                        <option value="#">Иван Антонов</option>
-                                    </select>
+                                <div class="main__form-input-conteiner">
+                                    <p>Заявка от <span>*</span></p>
+                                    <div class="dropdown">
+                                        <button type="button" class="dropdown-button" onclick="toggleDropdown()" >От кого</button>
+                                        <div id="dropdownItems">
+                                            <input type="text" 
+                                                   id="dropdownSearch" 
+                                                   placeholder="Найти сотрудника">
+                                            <div class="dropdown-item">Иван Антонов</div>
+                                            <div class="dropdown-item">Андрей Антонов</div>
+                                            <div class="dropdown-item">Андрей Антонов</div>
+                                        </div>
+                                    </div>    
                                 </div>
-                                <div class="main__form-input">
-                                    <label for="notify-it">Дополнительно оповещать</label>
-                                    <select name="name-notify" id="notify-it" >
-                                        <option value="#" selected class="selected">Выберите участника</option>
-                                        <option value="#">Иван Антонов</option>
-                                        <option value="#">Иван Антонов</option>
-                                        <option value="#">Иван Антонов</option>
-                                    </select>
+                                <div class="main__form-input-conteiner">
+                                    <p>Дополнительно оповещать</p>
+                                    <div class="itc-select" id="select-3">
+                                        <!-- Кнопка для открытия выпадающего списка -->
+                                        <button type="button" class="itc-select__toggle" name="notify" value="" data-select="toggle" data-index="-1">Выберите сотрудника</button>
+                                        <!-- Выпадающий список -->
+                                        <div class="itc-select__dropdown">
+                                          <ul class="itc-select__options">
+                                            <li class="itc-select__option" data-select="option" data-value="notify-user-1" data-index="0">Иван Антонов</li>
+                                            <li class="itc-select__option" data-select="option" data-value="notify-user-2" data-index="1">Андрей Антонов</li>
+                                            <li class="itc-select__option" data-select="option" data-value="notify-user-3" data-index="2">Андрей Антонов</li>
+                                          </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="main__form-input">
                                     <label for="description-it">Детальное описание</label>
@@ -171,6 +187,12 @@
             </section>
 
         </main>
+        <script src="../../sourse/js/inform_technolog/technical-support-css/request/itc-custom-select.js"></script>
+        <script src="../../sourse/js/inform_technolog/technical-support-css/request/custom-select-search.js"></script>
+        <script>
+            const select1 = new ItcCustomSelect('#select-1');
+            const select3 = new ItcCustomSelect('#select-3');
+        </script>
     </section>
 </body>
 

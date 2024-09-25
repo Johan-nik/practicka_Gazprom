@@ -11,7 +11,7 @@
 
 .main__form-manual {
     background-color: #F4F6FA;
-    height: 222px;
+    min-height: 222px;
     border-radius: 12px;
     padding: 24px;
     display: flex;
@@ -33,7 +33,7 @@
     font-family: "Helios Cond", sans-serif;
     font-weight: 400;
     font-size: 17px;
-    line-height: 22px;
+    line-height: 24px;
     color: #292D32;
 }
 
@@ -97,7 +97,7 @@
     flex-direction: column;
     gap: 12px;
     position: relative;
-    z-index: 10;
+    z-index: 5;
 }
 
 .main__form-input label {
@@ -108,45 +108,365 @@
     color: #292D32;
 }
 
+.main__form-input-conteiner span {
+    color: #006FAC;
+}
+
 .main__form-input span {
     color: #006FAC;
 }
 
-.main__form-input select {
-    border: #E1E5EC 1px solid;
-    height: 40px;
-    border-radius: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
-    color: #C9C9D7;
+/* вставлено из файла */
+
+.main__form-input-conteiner p {
     font-family: "Helios Cond", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-image: url(../../../../image/inform_technolog/technical-support-img/request-inform__technolog-img/request-it__main/arrow-circle-left.svg);
-    background-repeat: no-repeat;
-    background-position-x: 99%;
-    background-position-y: center;
+    color: #292D32;
+    margin: 0;
+    margin-bottom: 12px;
 }
 
+.itc-select {
+    position: relative;
+    width: 100%;
+}
 
-.main__form-input option {
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border-radius: 4px;
+.itc-select__toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 9px 12px 9px 12px;
     font-family: "Helios Cond", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19.2px;
-    color: #002033;
+    line-height: 22px;
+    color: #C9C9D7;
+    background-color: #FFFFFF;
+    border: #E1E5EC 1px solid;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
 }
 
-.selected {
-    display: none;
+.sender {
+    color: #1D222F;
 }
+
+.itc-select__toggle::after {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+    background-image: url(../../../../image/inform_technolog/technical-support-img/request-inform__technolog-img/request-it__main/arrow-circle-left.svg);
+    background-size: cover;
+    content: "";
+}
+
+.itc-select__toggle:focus {
+    outline: none;
+}
+
+.itc-select_show .itc-select__toggle::after {
+    transform: rotate(180deg);
+}
+
+.itc-select__dropdown {
+    position: absolute;
+    top: 2.7rem;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    padding: 4px 0px 4px 0px;
+    min-height: max-content;
+    overflow-y: auto;
+    background-color: #FFFFFF;
+    border: 1px solid #00426947;
+    box-shadow: 0px 8px 24px 0px #0020331F;
+    border-radius: 4px;
+}
+
+.itc-select_show .itc-select__dropdown {
+    display: block;
+}
+
+.itc-select_show .itc-select__backdrop {
+    display: block;
+}
+
+.itc-select__options {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1D222F;
+}
+
+.itc-select__option {
+    padding: 12.5px 12px;
+
+}
+
+.itc-select__option_selected {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #006FAC;
+    border-left: 3px solid #006FAC;
+}
+
+.itc-select__option_selected::after {
+    width: 0.75rem;
+    height: 0.75rem;
+    color: #006FAC;
+}
+
+.itc-select__option:hover {
+    color: #006FAC;
+    cursor: pointer;
+    transition: 0.2s color ease-in-out;
+}
+
+/* конец того, что я вставил */
+
+/* То, что вставил №2 */
+.jselect {
+    position: relative;
+    height: 2rem;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+h1,p { color: #fff; }
+.form-arwa{
+	width: 450px;
+	padding: 30px;
+	margin: 150px auto;
+	background: #222;
+}
+.jselect > .jselect__display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 9px 12px 9px 12px;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1D222F;
+    text-align: left;
+    background-color: #FFFFFF;
+    border: #E1E5EC 1px solid;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.jselect > .jselect__display::after {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+    background-image: url(../../../../image/inform_technolog/technical-support-img/request-inform__technolog-img/request-it__main/arrow-circle-left.svg);
+    background-size: cover;
+    content: "";
+}
+
+.jselect > .jselect__display > span {
+    opacity: 0.65;
+    color: #C9C9D7;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.jselect > .jselect__display[aria-disabled="true"] {
+    cursor: not-allowed;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0.5;
+}
+.jselect > .jselect__hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border: none;
+    color: transparent;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+}
+.jselect > .jselect__menu {
+    flex-direction: column;
+    position: absolute;
+    display: none;
+    padding: 4px 0px 4px 0px;
+    margin-top: 3px;
+    border: 1px solid #E1E5EC;
+    box-shadow: 0px 8px 24px 0px #0020331F;
+    border-radius: 8px;
+    top: 2.5rem;
+    z-index: 1;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+.jselect.reverse > .jselect__menu {
+    top: unset;
+}
+
+.jselect.open > .jselect__display ~ .jselect__menu {
+    display: flex;
+}
+.jselect.reverse > .jselect__menu {
+    flex-direction: column;
+}
+.jselect.open > .jselect__display ~ .jselect__menu .jselect__search {
+    border-top: 3px;
+    border-radius: 8px;
+}
+.jselect > .jselect__menu > .jselect__search {
+    height: 3rem;
+    border-radius: 8px;
+    max-width: 100%;
+    height: max-content;
+    padding: 8px 12px 8px 12px;
+    margin: 4px 8px 8px 8px;
+    border-style: none;
+    border-bottom: none;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D222F;
+    z-index: 12;
+    background-color: #E9EDF4;
+}
+
+.jselect > .jselect__menu > .jselect__search:focus{
+    outline: 1px solid #006FAC;
+}
+
+.jselect > .jselect__menu > .jselect__list {
+    display: flex;
+    flex-direction: column;
+    min-height: max-content;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    list-style: none;
+    top: 2.7rem;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+.jselect__list > .jselect__noresult {
+    padding: 0.5rem 1rem;
+    pointer-events: none;
+    opacity: 0.65;
+}
+.jselect__list .jselect__group {
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+.jselect--option {
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1D222F;
+    max-width: 100%;
+    padding: 8px 12px;
+}
+.jselect__list > .jselect--option:last-child {
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+.jselect--option * {
+    cursor: default;
+    color: inherit;
+}
+
+#jselect-test_menu {
+    z-index: 10;
+}
+
+#jselect-notify_menu {
+    z-index: 8;
+}
+
+.jselect--option.focus {
+    color: #006FAC;
+}
+.jselect--option.selected {
+    border-left: 3px solid #006FAC;
+}
+.jselect--option.focus.selected {
+    color: #006FAC;
+    border-left: 3px solid #006FAC;
+}
+
+.jselect--option .jselect--option__body span {
+    display: block;
+    margin-top: 0.1rem;
+    color: #1D222F;
+}
+
+.jselect--option.selected span {
+    color: #006FAC;
+}
+
+.jselect--option.focus.selected span {
+    color: #006FAC;
+}
+
+.jselect--option.selected small {
+    color: #efefef !important;
+}
+.jselect--option.disabled > * {
+    opacity: 0.5;
+}
+.jselect--option > .jselect--option__img {
+    float: left;
+    height: 39px;
+    margin: 0 8px 0 0;
+}
+.jselect--option .jselect--option__body {
+    display: inline-block;
+    clear: both;
+}
+
+.jselect--option > .jselect--option__body small {
+    display: block;
+    color: #858585;
+    margin-top: 0.2rem;
+}
+
+/* Конец того, что вставил №2 */
+
+/* .selected {
+    display: none;
+} */
 
 #employee-it {
     color: #1D222F;
@@ -166,7 +486,7 @@
 
 .main__form-input textarea::placeholder {
     color: #C9C9D7;
-  }
+}
 
 
 
@@ -194,10 +514,10 @@
 
 #files-it {
     width: 0.1px;
-     height: 0.1px;
-     opacity: 0;
-     position: absolute;
-     z-index: -10;
+    height: 0.1px;
+    opacity: 0;
+    position: absolute;
+    z-index: -10;
 }
 
 .main__form-input-label-support {
@@ -246,6 +566,6 @@
     font-size: 18px;
     line-height: 24px;
     color: #FFFFFF;
-    cursor: pointer; 
+    cursor: pointer;
     min-width: 190px;
 }

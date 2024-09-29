@@ -1,0 +1,146 @@
+.main__info {
+    margin-top: 36px;
+    margin-bottom: 2px;
+}
+
+.main__title {
+    margin-top: 24px;
+    font-size: 28px;
+}
+
+.main__section-conteiner {
+    display: block;
+}
+
+.main__applications-list {
+    margin-top: 8px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.main__applications-nav {
+    display: grid;
+    grid-template-columns: 90px 90px 120px 760px 120px 120px 160px;
+    gap: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #F4F6FA;
+}
+
+.main__applications-nav-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.main__applications-nav-item button {
+    border-style: none;
+    padding: 0;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7F7F91;
+    background-color: #FFFFFF;
+    height: max-content;
+}
+
+.main__applications-nav-item button:hover {
+    color: #1B6FBC;
+}
+
+.service button:hover {
+    color: #7F7F91;
+}
+
+.main__applications-nav-item img {
+    width: 16px;
+    height: 16px;
+}
+
+.main__applications-item-box {
+    display: grid;
+    grid-template-columns: 90px 90px 120px 760px 120px 120px 160px;
+    gap: 24px;
+    border-bottom: 1px solid #F4F6FA;
+    min-height: 72px;
+    align-items: center;
+
+}
+
+.main__applications-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main__applications-item span {
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #1D222F;
+}
+
+.ready-img {
+    width: 6px;
+    position: absolute;
+    top: 0;
+}
+
+.ready-button {
+    border-style: none;
+    min-width: 50px;
+    background-color: #84BF42;
+    border-radius: 4px;
+    padding: 2px 4px 2px 4px;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main__applications-item a {
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D222F;
+    text-decoration: none;
+}
+
+.main__applications-item a:hover {
+    color: #1B6FBC;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.at-work-button {
+    border-style: none;
+    min-width: 59px;
+    background-color: #1B6FBC;
+    border-radius: 4px;
+    padding: 2px 4px 2px 4px;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.closed-button {
+    border-style: none;
+    min-width: 60px;
+    background-color: #C9C9D7;
+    border-radius: 4px;
+    padding: 2px 4px 2px 4px;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

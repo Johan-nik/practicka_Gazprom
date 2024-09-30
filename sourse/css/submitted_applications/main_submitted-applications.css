@@ -144,3 +144,95 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
+.main__applications-button-navigation-box {
+    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__applications-button-avigation {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+}
+
+.main__applications-button-avigation button img {
+    width: 24px;
+    height: 24px;
+}
+
+.main__applications-button-avigation button {
+    display: flex;
+    align-items: center;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #1D222F;
+    padding: 0;
+    border-style: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+#button-avigation-back {
+    color: #7F7F91;
+}
+
+#active-list {
+    color: #006FAC;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.main__applications-button-avigation button:hover {
+    color: #006FAC;
+}
+
+#button-avigation-back:hover {
+    color: #006FAC;
+}
+
+
+@media (min-width: 1921px){
+    .main__applications-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.5fr 4fr 1.5fr 1.5fr 2fr;
+        gap: 24px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #F4F6FA;
+    }
+
+    .main__applications-item-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.5fr 4fr 1.5fr 1.5fr 2fr;
+        gap: 24px;
+        border-bottom: 1px solid #F4F6FA;
+        min-height: 72px;
+        align-items: center;
+    
+    }
+}
+
+@media (max-width: 1920px){
+    .main__applications-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.5fr 4fr 1.5fr 1.5fr 2fr;
+        gap: 24px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #F4F6FA;
+    }
+
+    .main__applications-item-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.5fr 4fr 1.5fr 1.5fr 2fr;
+        gap: 24px;
+        border-bottom: 1px solid #F4F6FA;
+        min-height: 72px;
+        align-items: center;
+    
+    }
+}

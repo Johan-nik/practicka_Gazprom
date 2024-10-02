@@ -25,6 +25,7 @@
     gap: 24px;
     padding-bottom: 12px;
     border-bottom: 1px solid #F4F6FA;
+    position: relative;
 }
 
 .main__applications-nav-item {
@@ -34,6 +35,9 @@
 }
 
 .main__applications-nav-item button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     border-style: none;
     padding: 0;
     font-family: "Helios Cond", sans-serif;
@@ -45,17 +49,33 @@
     height: max-content;
 }
 
+.main__applications-nav-item button img {
+    width: 16px;
+    height: 16px;
+}
+
 .main__applications-nav-item button:hover {
     color: #1B6FBC;
 }
 
-.service button:hover {
-    color: #7F7F91;
+.main__applications-nav-item button:hover > img {
+    filter: invert(36%) sepia(21%) saturate(3785%) hue-rotate(171deg) brightness(89%) contrast(105%);
 }
 
-.main__applications-nav-item img {
-    width: 16px;
-    height: 16px;
+.main__applications-nav-item button:focus > img {
+    filter: invert(36%) sepia(21%) saturate(3785%) hue-rotate(171deg) brightness(89%) contrast(105%);
+}
+
+.number-img {
+    display: none;
+}
+
+.main__applications-nav-item button:focus > .number-img {
+    display: block;
+}
+
+.service button:hover {
+    color: #7F7F91;
 }
 
 .main__applications-item-box {
@@ -192,10 +212,13 @@
     color: #006FAC;
 }
 
+.main__applications-button-avigation button img:hover {
+    filter: invert(36%) sepia(21%) saturate(3785%) hue-rotate(171deg) brightness(89%) contrast(105%);
+}
+
 #button-avigation-back:hover {
     color: #006FAC;
 }
-
 
 @media (min-width: 1921px){
     .main__applications-nav {

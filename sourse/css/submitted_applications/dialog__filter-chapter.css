@@ -1,0 +1,96 @@
+.dialog__filter-chapter {
+    position: absolute;
+    margin: 0;
+    top: 400px;
+    left: 400px;
+    width: 481px;
+    height: max-content;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #AEAEAE40;
+    box-shadow: 0px 10px 16px 0px #AEAEAE26;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    display: none;
+}
+
+.dialog__filter-chapter p {
+    margin: 0;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.filter-chapter-conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filter-chapter-button {
+    min-height: 24px;
+    border-radius: 99px;
+    border-style: none;
+    padding: 0 12px 0 12px;
+    background-color: #00426912;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #00395CCC;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.filter-chapter-button:hover {
+    background-color: #C9C9D7;
+}
+
+.dialog__filter-chapter-button-box {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.dialog__filter-chapter-button-box button {
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 8px;
+    border-style: none;
+    padding: 0;
+    min-width: 88px;
+    min-height: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-chapter-button-apply {
+    background-color: #006FAC;
+    color: #FFFFFF;
+}
+
+.filter-chapter-button-apply:hover {
+    background-color: #466BF0;
+}
+
+.filter-chapter-button-reset {
+    background-color: #E9EDF4;
+    color: #1D222F;
+}
+
+.filter-chapter-button-reset:hover {
+    background-color: #C9C9D7;
+    color: #006FAC;
+}
+
+dialog:-internal-dialog-in-top-layer::backdrop {
+    background: none;
+}

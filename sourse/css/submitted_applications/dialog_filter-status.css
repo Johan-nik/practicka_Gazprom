@@ -1,0 +1,158 @@
+.dialog__filter-status {
+    position: absolute;
+    margin: 0;
+    top: 400px;
+    left: 350px;
+    width: 357px;
+    height: max-content;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #AEAEAE40;
+    box-shadow: 0px 10px 16px 0px #AEAEAE26;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    display: none;
+}
+
+.dialog__filter-status p {
+    margin: 0;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.filter-status-conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filter-status-box {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.filter-status-box input {
+    background-color: #FFFFFF;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid #E1E5EC;
+    appearance: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-status-box input:checked {
+    background-color: #006FAC;
+    border: 1px solid #006FAC;
+}
+
+.filter-status-box input:checked::after {
+    content: '\2714';
+    width: 15px;
+    height: 14px;
+    align-items: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-status-box label {
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 13px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 2px 4px 2px 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.label-new-status {
+    background-color: #34BCE1;
+}
+
+.label-in-work-status {
+    background-color: #1B6FBC;
+}
+
+.label-agreed-status {
+    background-color: #970096;
+}
+
+.label-on-approval-status {
+    background-color: #8654DC;
+}
+
+.label-completed-status {
+    background-color: #84BF42;
+}
+
+.label-resumed-status {
+    background-color: #FEA40C;
+}
+
+.label-awaiting-a-response-status {
+    background-color: #395F75;
+}
+
+.label-closed-status {
+    background-color: #C9C9D7;
+}
+
+.label-postponed-status {
+    background-color: #8B8BA9;
+}
+
+.dialog__filter-status-button-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+}
+
+.dialog__filter-status-button-box button {
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 8px;
+    padding: 0 16px 0 16px;
+    border-style: none;
+    min-height: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-status-button-apply {
+    background-color: #006FAC;
+    color: #FFFFFF;
+}
+
+.filter-status-button-apply:hover {
+    background-color: #466BF0;
+}
+
+.filter-status-button-reset {
+    background-color: #E9EDF4;
+    color: #1D222F;
+}
+
+.filter-status-button-reset:hover {
+    background-color: #C9C9D7;
+    color: #006FAC;
+}
+
+dialog:-internal-dialog-in-top-layer::backdrop {
+    background: none;
+}

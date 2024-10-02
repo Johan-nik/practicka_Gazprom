@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="sourse/css/main.css">
     <link rel="stylesheet" href="sourse/css/nav_menu-bar.css">
     <link rel="stylesheet" href="sourse/css/submitted_applications/main_submitted-applications.css">
+    <link rel="stylesheet" href="sourse/css/submitted_applications/dialog_filter-status.css">
+    <link rel="stylesheet" href="sourse/css/submitted_applications/dialog__filter-chapter.css">
     <title>Газпром</title>
 </head>
 
@@ -104,27 +106,84 @@
                             <div class="main__application-conteiner">
                                 <div class="main__applications-nav">
                                     <div class="main__applications-nav-item number">
-                                        <button>Номер</button>
-                                        <img src="sourse/image/submitted_applications/u_sort-amount-down.svg" alt="">
+                                        <button>Номер <img class="number-img" src="sourse/image/submitted_applications/u_sort-amount-down.svg" alt=""></button>
                                     </div>
                                     <div class="main__applications-nav-item status">
-                                        <button>Статус</button>
-                                        <img src="sourse/image/submitted_applications/u_filter.svg" alt="">
+                                        <button id="status-open-filter">Статус <img src="sourse/image/submitted_applications/u_filter.svg" alt=""></button>
                                     </div>
+                                    <dialog class="dialog__filter-status">
+                                        <p>Выберите статус</p>
+                                        <div class="filter-status-conteiner">
+                                            <div class="filter-status-box">
+                                                <input type="checkbox" name="new-status" id="new-status-id">
+                                                <label class="label-new-status" for="new-status-id">Новая</label>
+                                            </div>
+                                            <div class="filter-status-box">
+                                                <input type="checkbox" name="in-work-status" id="in-work-status-id">
+                                                <label class="label-in-work-status" for="in-work-status-id">в работе</label>
+                                            </div>
+                                            <div class="filter-status-box">
+                                                <input type="checkbox" name="agreed-status" id="agreed-status-id">
+                                                <label class="label-agreed-status" for="agreed-status-id">Согласована</label>
+                                            </div>
+                                            <div class="filter-status-box">
+                                                <input type="checkbox" name="on-approval-status" id="on-approval-status-id">
+                                                <label class="label-on-approval-status" for="on-approval-status-id">На согласовании</label>
+                                            </div>
+                                            <div class="filter-status-box">
+                                                <input type="checkbox" name="completed-status" id="completed-status-id">
+                                                <label class="label-completed-status" for="completed-status-id">Выполнена</label>
+                                            </div>
+                                            <div class="filter-status-box">
+                                                <input type="checkbox" name="resumed-status" id="resumed-status-id">
+                                                <label class="label-resumed-status" for="resumed-status-id">Возобновлена</label>
+                                            </div>
+                                            <div class="filter-status-box">
+                                                <input type="checkbox" name="awaiting-a-response-status" id="awaiting-a-response-status-id">
+                                                <label class="label-awaiting-a-response-status" for="awaiting-a-response-status-id">Ожидает ответа контрагента</label>
+                                            </div>
+                                            <div class="filter-status-box">
+                                                <input type="checkbox" name="closed-status" id="closed-status-id">
+                                                <label class="label-closed-status" for="closed-status-id">Закрыта</label>
+                                            </div>
+                                            <div class="filter-status-box">
+                                                <input type="checkbox" name="postponed-status" id="postponed-status-id">
+                                                <label class="label-postponed-status" for="postponed-status-id">Отложена</label>
+                                            </div>
+                                        </div>
+                                        <div class="dialog__filter-status-button-box">
+                                            <button class="filter-status-button-apply">Применить</button>
+                                            <button class="filter-status-button-reset">Сбросить</button>
+                                        </div>
+                                    </dialog>
                                     <div class="main__applications-nav-item chapter">
-                                        <button>Раздел</button>
-                                        <img src="sourse/image/submitted_applications/u_filter.svg" alt="">
+                                        <button id="chapter-open-filter">Раздел <img src="sourse/image/submitted_applications/u_filter.svg" alt=""></button>
                                     </div>
+                                    <dialog class="dialog__filter-chapter">
+                                        <p>Выберите раздел</p>
+                                        <div class="filter-chapter-conteiner">
+                                            <button class="filter-chapter-button">Управление персоналом</button>
+                                            <button class="filter-chapter-button">Организационное обеспечение</button>
+                                            <button class="filter-chapter-button">Креативная поддержка</button>
+                                            <button class="filter-chapter-button">Экономика и финансы</button>
+                                            <button class="filter-chapter-button">Информационные технологии</button>
+                                            <button class="filter-chapter-button">Проектное и программное управление</button>
+                                            <button class="filter-chapter-button">Корпоративная защита</button>
+                                            <button class="filter-chapter-button">Юридические вопросы</button>
+                                        </div>
+                                        <div class="dialog__filter-chapter-button-box">
+                                            <button class="filter-chapter-button-apply">Применить</button>
+                                            <button class="filter-chapter-button-reset">Сбросить</button>
+                                        </div>
+                                    </dialog>
                                     <div class="main__applications-nav-item service">
                                         <button>Услуга</button>
                                     </div>
                                     <div class="main__applications-nav-item date-create">
-                                        <button>Дата создания</button>
-                                        <img src="sourse/image/submitted_applications/u_sort-amount-down.svg" alt="">
+                                        <button>Дата создания <img src="sourse/image/submitted_applications/u_sort-amount-down.svg" alt=""></button>
                                     </div>
                                     <div class="main__applications-nav-item deadline">
-                                        <button>Крайний срок</button>
-                                        <img src="sourse/image/submitted_applications/u_sort-amount-down.svg" alt="">
+                                        <button>Крайний срок <img src="sourse/image/submitted_applications/u_sort-amount-down.svg" alt=""></button>
                                     </div>
                                     <div class="main__applications-nav-item customer">
                                         <button>Заказчик</button>
@@ -386,6 +445,8 @@
 
         </main>
     </section>
+    <script src="sourse/js/submitted_applications/dialog_filter-status.js"></script>
+    <script src="sourse/js/submitted_applications/dialog__filter-chapter.js"></script>
 </body>
 
 </html>

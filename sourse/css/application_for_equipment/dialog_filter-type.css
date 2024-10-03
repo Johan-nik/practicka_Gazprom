@@ -1,0 +1,122 @@
+.dialog__filter-type {
+    position: absolute;
+    margin: 0;
+    top: 400px;
+    left: 290px;
+    width: 239px;
+    height: max-content;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #AEAEAE40;
+    box-shadow: 0px 10px 16px 0px #AEAEAE26;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    display: none;
+}
+
+.dialog__filter-type p {
+    margin: 0;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.filter-type-conteiner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filter-type-box {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.filter-type-box input {
+    background-color: #FFFFFF;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid #E1E5EC;
+    appearance: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-type-box input:checked {
+    background-color: #006FAC;
+    border: 1px solid #006FAC;
+}
+
+.filter-type-box input:checked::after {
+    content: '\2714';
+    width: 15px;
+    height: 14px;
+    align-items: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-type-box label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #1D222F;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dialog__filter-type-button-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+}
+
+.dialog__filter-type-button-box button {
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 8px;
+    padding: 0 16px 0 16px;
+    border-style: none;
+    min-height: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-type-button-apply {
+    background-color: #006FAC;
+    color: #FFFFFF;
+}
+
+.filter-type-button-apply:hover {
+    background-color: #466BF0;
+}
+
+.filter-type-button-reset {
+    background-color: #E9EDF4;
+    color: #1D222F;
+}
+
+.filter-type-button-reset:hover {
+    background-color: #C9C9D7;
+    color: #006FAC;
+}
+
+dialog:-internal-dialog-in-top-layer::backdrop {
+    background: none;
+}

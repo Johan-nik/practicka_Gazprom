@@ -569,3 +569,12 @@ h1,p { color: #fff; }
     cursor: pointer;
     min-width: 190px;
 }
+
+.main__form-button-create:hover {
+    background-color: #466BF0;
+}
+
+.main__form-button-cancel:hover {
+    background-color: #C9C9D7;
+    color: #006FAC;
+}

@@ -1,3 +1,9 @@
+.main__section-conteiner {
+    display: grid;
+    grid-template-columns: 1fr 349px;
+    gap: 0 16px;
+}
+
 .main__info {
     margin-top: 36px;
     margin-bottom: 2px;
@@ -8,9 +14,6 @@
     font-size: 28px;
 }
 
-.main__section-conteiner {
-    display: block;
-}
 
 .main__applications-list {
     margin-top: 8px;
@@ -21,7 +24,7 @@
 
 .main__applications-nav {
     display: grid;
-    grid-template-columns: 90px 90px 120px 760px 120px 120px 160px;
+    grid-template-columns: 120px 707px 120px 180px;
     gap: 24px;
     padding-bottom: 12px;
     border-bottom: 1px solid #F4F6FA;
@@ -47,6 +50,7 @@
     color: #7F7F91;
     background-color: #FFFFFF;
     height: max-content;
+    cursor: pointer;
 }
 
 .main__applications-nav-item button img {
@@ -66,22 +70,25 @@
     filter: invert(36%) sepia(21%) saturate(3785%) hue-rotate(171deg) brightness(89%) contrast(105%);
 }
 
-.number-img {
+.out-img {
     transform: rotate(180deg);
     display: none;
 }
 
-.main__applications-nav-item button:focus > .number-img {
+.main__applications-nav-item button:focus > .out-img {
     display: block;
 }
+.name button {
+    cursor: default;
+}
 
-.service button:hover {
+.name button:hover {
     color: #7F7F91;
 }
 
 .main__applications-item-box {
     display: grid;
-    grid-template-columns: 90px 90px 120px 760px 120px 120px 160px;
+    grid-template-columns: 120px 707px 120px 180px;
     gap: 24px;
     border-bottom: 1px solid #F4F6FA;
     min-height: 72px;
@@ -93,34 +100,18 @@
     display: flex;
     align-items: center;
     position: relative;
+    gap: 10px;
 }
 
 .main__applications-item span {
     font-family: "Helios Cond", sans-serif;
     font-weight: 400;
+}
+
+.equipment-type {
     font-size: 15px;
     line-height: 24px;
     color: #1D222F;
-}
-
-.ready-img {
-    width: 6px;
-    position: absolute;
-    top: 0;
-}
-
-.ready-button {
-    border-style: none;
-    min-width: 50px;
-    background-color: #84BF42;
-    border-radius: 4px;
-    padding: 2px 4px 2px 4px;
-    font-family: "Helios Cond", sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 13px;
-    text-transform: uppercase;
-    color: #FFFFFF;
 }
 
 .main__applications-item a {
@@ -132,99 +123,96 @@
     text-decoration: none;
 }
 
+.serial-number {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
 .main__applications-item a:hover {
     color: #1B6FBC;
     font-size: 17px;
     text-decoration: underline;
 }
 
-.at-work-button {
+.button-actions {
+    gap: 8px;
+}
+
+.button-actions button {
     border-style: none;
-    min-width: 59px;
-    background-color: #1B6FBC;
-    border-radius: 4px;
-    padding: 2px 4px 2px 4px;
-    font-family: "Helios Cond", sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 13px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.closed-button {
-    border-style: none;
-    min-width: 60px;
-    background-color: #C9C9D7;
-    border-radius: 4px;
-    padding: 2px 4px 2px 4px;
-    font-family: "Helios Cond", sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 13px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.main__applications-button-navigation-box {
-    padding-top: 16px;
-    display: flex;
-    justify-content: center;
-}
-
-.main__applications-button-avigation {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    align-items: center;
-}
-
-.main__applications-button-avigation button img {
-    width: 24px;
-    height: 24px;
-}
-
-.main__applications-button-avigation button {
-    display: flex;
-    align-items: center;
+    height: 40px;
+    padding: 0 16px 0 16px;
+    border-radius: 8px;
+    background-color: #E9EDF4;
     font-family: "Helios Cond", sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    color: #1D222F;
-    padding: 0;
-    border-style: none;
-    background-color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
     cursor: pointer;
 }
 
-#button-avigation-back {
-    color: #7F7F91;
+.button-actions button:hover {
+    background-color: #C9C9D7;
+    color: #006FAC;
 }
 
-#active-list {
-    color: #006FAC;
+.main__aside-bar {
+    width: 301px;
+    height: 297px;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #FFFFFF;
+    margin-top: 24px;
+    align-items: center;
+}
+
+.main__aside-keyboard-icon {
+    width: 88px;
+    height: 88px;
+    margin: 36px;
+}
+
+.main__aside-title {
+    font-family: "Helios Cond", sans-serif;
     font-weight: 700;
-    text-decoration: underline;
-    text-underline-offset: 8px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #002033;
 }
 
-.main__applications-button-avigation button:hover {
-    color: #006FAC;
+.main__aside-button-box {
+    width: 100%;
 }
 
-.main__applications-button-avigation button img:hover {
-    filter: invert(36%) sepia(21%) saturate(3785%) hue-rotate(171deg) brightness(89%) contrast(105%);
+.main__aside-button-register {
+    height: 40px;
+    width: 100%;
+    border-style: none;
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 0 16px 0 16px;
+    background-color: #006FAC;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-#button-avigation-back:hover {
-    color: #006FAC;
+
+.main__aside-button-register:hover {
+    background-color: #1B6FBC;
 }
 
 @media (min-width: 1921px){
     .main__applications-nav {
         display: grid;
-        grid-template-columns: 1fr 1fr 1.5fr 4fr 1.5fr 1.5fr 2fr;
+        grid-template-columns: 1fr 4fr 1fr 1.5fr;
         gap: 24px;
         padding-bottom: 12px;
         border-bottom: 1px solid #F4F6FA;
@@ -232,7 +220,7 @@
 
     .main__applications-item-box {
         display: grid;
-        grid-template-columns: 1fr 1fr 1.5fr 4fr 1.5fr 1.5fr 2fr;
+        grid-template-columns: 1fr 4fr 1fr 1.5fr;
         gap: 24px;
         border-bottom: 1px solid #F4F6FA;
         min-height: 72px;
@@ -244,7 +232,7 @@
 @media (max-width: 1920px){
     .main__applications-nav {
         display: grid;
-        grid-template-columns: 1fr 1fr 1.5fr 4fr 1.5fr 1.5fr 2fr;
+        grid-template-columns: 1fr 4fr 1fr 1.5fr;
         gap: 24px;
         padding-bottom: 12px;
         border-bottom: 1px solid #F4F6FA;
@@ -252,7 +240,7 @@
 
     .main__applications-item-box {
         display: grid;
-        grid-template-columns: 1fr 1fr 1.5fr 4fr 1.5fr 1.5fr 2fr;
+        grid-template-columns: 1fr 4fr 1fr 1.5fr;
         gap: 24px;
         border-bottom: 1px solid #F4F6FA;
         min-height: 72px;

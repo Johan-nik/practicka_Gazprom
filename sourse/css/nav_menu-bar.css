@@ -78,11 +78,6 @@
 }
 
 .active {
-    list-style-type: none;
-    display: flex;
-    gap: 0 12px;
-    width: 196px;
-    height: 44px;
     background-color: #FFFFFF1A ;
 }
 
@@ -95,6 +90,14 @@
     color: #FFFFFF;
     opacity: 30%;
     border-radius: 8px;
+}
+
+.nav__menu-item:hover {
+    background-color: #FFFFFF33;
+}
+
+.nav__menu-item .no-active {
+    background-color: #FFFFFF1A;
 }
 
 @font-face {

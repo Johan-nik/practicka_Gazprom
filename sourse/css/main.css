@@ -2,6 +2,7 @@
     margin-right: 32px;
     margin-bottom: 24px;
 }
+
 /* Первый section */
 .main__info {
     margin-top: 20px;
@@ -12,7 +13,7 @@
     font-family: "Helios Cond", sans-serif;
     font-weight: 700;
     font-size: 24px;
-    color:black;
+    color: black;
     line-height: 40px;
 }
 
@@ -63,21 +64,16 @@
     text-decoration: none;
     border-bottom: 2.5px #006FAC solid;
     font-weight: 700;
-    color: #006FAC; 
+    color: #006FAC;
 }
 
 
 .main__form-search {
-    width: 1284px;
     display: flex;
     align-items: center;
     margin: 0;
     padding: 0;
     margin-top: 24px;
-    background-color: #E9EDF4;
-    border-radius: 8px;
-    padding-left: 6px;
-    padding-right: 6px;
 }
 
 .main__search {
@@ -90,11 +86,13 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-}
-
-.main__img-search {
-    width: 20px;
-    height: 20px;
+    background-image: url(../image/main/search-normal.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px);
+    right: 12px;
+    padding: 0 12px;
+    border-radius: 8px;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
@@ -105,7 +103,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .main__card-collection {
     margin-top: 24px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 16px 10px;
 }
 
@@ -114,24 +112,25 @@ input[type="search"]::-webkit-search-cancel-button {
     border-radius: 12px;
     padding: 24px;
     background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-image: url('../image/main/image-card/Group 129.svg');
-    background-size: 226.59px 188px;
     background-repeat: no-repeat;
     background-position: 100% 100%;
     position: relative;
+}
+
+.main__card a {
+    text-decoration: none;
+    min-height: 196px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main__card-info {
     display: flex;
     flex-direction: column;
     gap: 24px;
-}
-
-.main__card-info img {
-    width: 64px;
 }
 
 .main__card-info span {
@@ -172,10 +171,6 @@ input[type="search"]::-webkit-search-cancel-button {
     cursor: pointer;
 }
 
-.main__card-button button img{ 
-    width: 32px;
-    height: 32px;
-}
 
 /* Правая боковая панель с разными новостями, например "популярное о компании" */
 
@@ -255,44 +250,86 @@ input[type="search"]::-webkit-search-cancel-button {
     text-align: left;
 }
 
+.main__button:hover {
+    color: #006FAC;
+    transition: 0.5s;
+}
+
+.main__search:hover {
+    outline: 1px solid #006FAC;
+    background-image: url(../image/main/search-normal-active.svg);
+}
+
+.main__search:focus {
+    outline: 1px solid #006FAC;
+    background-image: url(../image/main/search-normal-active.svg);
+}
+
+.main__card:hover {
+    background:
+        linear-gradient(to top left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), url(../image/main/image-card/Group\ 129-active.svg);
+    background-color: rgba(0, 111, 172, 1);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    transition: 0.5s;
+}
+
+.main__card:hover .main__card-info span {
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.main__card:hover .main__card-button-info {
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.main__card:hover .main__card-info  svg{
+    svg {
+        fill: #006FAC;
+    }
+      
+    rect {
+        fill: #FFFFFF;
+    }
+      
+    path {
+        fill: #006FAC;
+    }
+}
+
+
+.main__card:hover .main__card-button-info-svg {
+    svg {
+        fill: #FFFFFF;
+    }
+      
+    rect {
+        fill: #006FAC;
+    }
+      
+    path {
+        fill: #FFFFFF;
+    }
+}
+
 
 @font-face {
     font-family: "Helios Cond";
     src: url("../fonts/ofont.ru_Helios Cond.ttf") format("truetype");
-    font-style:normal;
-    font-weight:normal;
+    font-style: normal;
+    font-weight: normal;
 }
 
 
-@media (min-width: 1600px) {
+@media (max-width: 1350px) {
     .main__form-search {
         width: auto;
     }
-}
 
-
-@media (max-width: 1590px){
-    .main__form-search {
-        width:auto;
-    }
     .main {
-        width:auto;
-    }
-
-    .main__card-collection {
-        margin-top: 24px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px 10px;
-    }
-}
-
-@media (max-width: 1350px){
-    .main__form-search {
-        width:auto;
-    }
-    .main {
-        width:auto;
+        width: auto;
     }
 
     .main__card-collection {
@@ -303,12 +340,13 @@ input[type="search"]::-webkit-search-cancel-button {
     }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
     .main__form-search {
-        width:auto;
+        width: auto;
     }
+
     .main {
-        width:auto;
+        width: auto;
     }
 
     .main__card-collection {

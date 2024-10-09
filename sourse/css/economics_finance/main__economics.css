@@ -8,12 +8,6 @@
     font-size: 28px;
 }
 
-.main__card-collection {
-    margin-top: 16px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
 .main__card-button {
     display: flex;
     justify-content: space-between;
@@ -102,39 +96,4 @@
     line-height: 24px;
     color: #1D222F;
     cursor: pointer;
-}
-
-
-@media (max-width: 1400px){
-    .main__form-search {
-        width:auto;
-    }
-    .main {
-        width:auto;
-    }
-
-    .main__card-collection {
-        margin-top: 24px;
-        margin-right: 32px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px 10px;
-    }
-}
-
-@media (max-width: 1200px){
-    .main__form-search {
-        width:auto;
-    }
-    .main {
-        width:auto;
-    }
-
-    .main__card-collection {
-        margin-top: 24px;
-        margin-right: 32px;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 16px 10px;
-    }
 }

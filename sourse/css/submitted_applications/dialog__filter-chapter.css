@@ -32,11 +32,23 @@
     gap: 8px;
 }
 
-.filter-chapter-button {
+.label-checkbox-chapter input {
+    z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.label-checkbox-chapter span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 24px;
+    padding: 0 12px;
     border-radius: 99px;
-    border-style: none;
-    padding: 0 12px 0 12px;
     background-color: #00426912;
     font-family: "Helios Cond", sans-serif;
     font-weight: 400;
@@ -45,11 +57,6 @@
     color: #00395CCC;
     cursor: pointer;
     user-select: none;
-}
-
-
-.filter-chapter-button:hover {
-    background-color: #C9C9D7;
 }
 
 .dialog__filter-chapter-button-box {
@@ -78,7 +85,7 @@
 }
 
 .filter-chapter-button-apply:hover {
-    background-color: #466BF0;
+    background-color: #0078D2;
 }
 
 .filter-chapter-button-reset {
@@ -91,6 +98,24 @@
     color: #006FAC;
 }
 
+.label-checkbox-chapter span:hover {
+    background-color: #C9C9D7;
+}
+
+.label-checkbox-chapter input[type=checkbox]:checked + span {
+	background-color: #0078D2;
+    color: #FFFFFF;
+}
+
 dialog:-internal-dialog-in-top-layer::backdrop {
     background: none;
+}
+
+
+
+@font-face {
+    font-family: "Helios Cond";
+    src: url("../fonts/ofont.ru_Helios Cond.ttf") format("truetype");
+    font-style:normal;
+    font-weight:normal;
 }

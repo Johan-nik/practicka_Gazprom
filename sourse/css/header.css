@@ -76,6 +76,11 @@
     text-transform: uppercase;
 }
 
+.nav__navbar a:hover {
+    color: #006FAC;
+    transition: 0.5s;
+}
+
 
 @font-face {
     font-family: "Helios Cond";

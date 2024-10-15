@@ -97,3 +97,12 @@
     color: #1D222F;
     cursor: pointer;
 }
+
+.main__aside-button-register:hover {
+    background-color: #466BF0;
+}
+
+.main__aside-button-chapter:hover {
+    background-color: #C9C9D7;
+    color: #006FAC;
+}

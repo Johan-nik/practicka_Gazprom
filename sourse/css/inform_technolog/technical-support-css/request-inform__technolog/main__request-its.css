@@ -11,7 +11,7 @@
 
 .main__form-manual {
     background-color: #F4F6FA;
-    min-height: 222px;
+    height: max-content;
     border-radius: 12px;
     padding: 24px;
     display: flex;
@@ -74,7 +74,7 @@
 
 .main__form-manual-support-text {
     padding: 0;
-    margin: 0;
+    margin: 0 0 24px 0;
     padding-left: 16px;
 }
 
@@ -569,6 +569,12 @@ h1,p { color: #fff; }
     cursor: pointer;
     min-width: 190px;
 }
+
+
+.main__form-manual-support-text {
+
+}
+
 
 .main__form-button-create:hover {
     background-color: #466BF0;

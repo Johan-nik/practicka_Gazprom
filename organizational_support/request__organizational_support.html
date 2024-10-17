@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../sourse/css/nav_menu-bar.css">
     <link rel="stylesheet" href="../sourse/css/inform_technolog/main__tecnolog.css">
     <link rel="stylesheet" href="../sourse/css/inform_technolog/technical-support-css/request-inform__technolog/main__request-its.css">
-    <link rel="stylesheet" href="../sourse/css/economics_finance/main_ef-request.css">
+    <link rel="stylesheet" href="../sourse/css/personnel_management/request_issuing-certificates.css">
     <title>Газпром</title>
 </head>
 
@@ -52,11 +52,11 @@
         <header class="header">
             <nav class="nav">
                 <div class="nav__navbar">
-                    <a href="#">Портал самообслуживания</a>
+                    <a href="../index.html">Портал самообслуживания</a>
                     <img src="../sourse/image/header/arrow-right_noncircle.svg" alt="str">
-                    <a href="#">Экономика и финансы</a>
+                    <a href="../organizational_support.html">Организационное обеспечение</a>
                     <img src="../sourse/image/header/arrow-right_noncircle.svg" alt="str">
-                    <a href="#">Финансовое управление</a>
+                    <a href="request__organizational_support.html">Организационное обеспечение</a>
                 </div>
                 <h1 class="nav__h1">Портал самообслуживания</h1>
             </nav>
@@ -86,8 +86,8 @@
                         <form class="main__form" action="#" method="post">
                             <div class="main__form-manual">
                                 <div class="main__form-manual-title-info">
-                                    <p class="main__form-manual-title" >Экономика и финансы. Финансовое управление</p>
-                                    <p class="main__form-manual-info">Консультации по финансовым вопросам</p>
+                                    <p class="main__form-manual-title" >Организационное обеспечение</p>
+                                    <p class="main__form-manual-info">Организация рабочего пространства и мероприятий</p>
                                 </div>
                                 <div class="main__form-manual-text">
                                     <div class="main__form-manual-support">
@@ -99,40 +99,30 @@
                                         <li>Заполните все необходимые поля в форме ниже и нажмите «Создать»</li>
                                     </ol>
                                 </div>
-                                <div class="main__form-manual-remark">
-                                    <div class="main__form-manual-remark-title">
-                                        <img src="../sourse/image/economics_finance/request/u_bolt-alt.svg" alt="">
-                                        <span>Важно!</span>
-                                    </div>
-                                    <div class="main__form-manual-remark-list">
-                                        <p>Не указывайте в комментарии и вложениях персональные данные:</p>
-                                        <ul>
-                                            <li>заработная плата</li>
-                                            <li>паспортные данные</li>
-                                            <li>СНИЛС</li>
-                                            <li>расчётные листки</li>
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
                             <div class="main__form-input-list">
                                 <div class="main__form-input-conteiner">
-                                    <p>Услуга</p>
+                                    <p>Услуга *</p>
                                     <div class="itc-select" id="select-1">
                                         <!-- Кнопка для открытия выпадающего списка -->
                                         <button type="button" class="itc-select__toggle" name="provider" value="" data-select="toggle" data-index="-1">Выберите услугу</button>
                                         <!-- Выпадающий список -->
                                         <div class="itc-select__dropdown">
                                           <ul class="itc-select__options">
-                                            <li class="itc-select__option" data-select="option" data-value="consultation-salary-project" data-index="0">Консультация по зарплатным проектам</li>
-                                            <li class="itc-select__option" data-select="option" data-value="consultation-mortgage" data-index="1">Консультация по ипотеке</li>
-                                            <li class="itc-select__option" data-select="option" data-value="consultation-upc" data-index="2">Консультация по УПЦ</li>
+                                            <li class="title-select-option"><span>Организация рабочего пространства</span></li>
+                                            <li class="itc-select__option" data-select="option" data-value="inquiries" data-index="0">Выдача иной справки</li>
+                                            <li class="itc-select__option" data-select="option" data-value="inquiries" data-index="1">Выдача иной справки</li>
+                                            <li class="itc-select__option" data-select="option" data-value="inquiries" data-index="2">Выдача иной справки</li>
+                                            <li class="itc-select__option" data-select="option" data-value="inquiries" data-index="3">Выдача иной справки</li>
+                                            <li class="title-select-option"><span>Организация мероприятий</span></li>
+                                            <li class="itc-select__option" data-select="option" data-value="inquiries" data-index="4">Выдача иной справки</li>
+                                            <li class="itc-select__option" data-select="option" data-value="inquiries" data-index="5">Выдача иной справки</li>
                                           </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="main__form-input">
-                                    <label for="description-it">Комментарий</label>
+                                    <label for="description-it">Комментарий *</label>
                                     <textarea name="description-it" id="description-it" placeholder="Прокомментировать запрос"></textarea>
                                 </div>
                                 <div class="main__form-input">

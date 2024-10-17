@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../sourse/css/inform_technolog/main__tecnolog.css">
     <link rel="stylesheet" href="../sourse/css/inform_technolog/technical-support-css/request-inform__technolog/main__request-its.css">
     <link rel="stylesheet" href="../sourse/css/economics_finance/main_ef-request.css">
+    <link rel="stylesheet" href="../sourse/css/personnel_management/request_issuing-certificates.css">
     <title>Газпром</title>
 </head>
 
@@ -52,11 +53,11 @@
         <header class="header">
             <nav class="nav">
                 <div class="nav__navbar">
-                    <a href="#">Портал самообслуживания</a>
+                    <a href="../index.html">Портал самообслуживания</a>
                     <img src="../sourse/image/header/arrow-right_noncircle.svg" alt="str">
-                    <a href="#">Экономика и финансы</a>
+                    <a href="../personnel_management.html">Управление персоналом</a>
                     <img src="../sourse/image/header/arrow-right_noncircle.svg" alt="str">
-                    <a href="#">Финансовое управление</a>
+                    <a href="request__management-issuing-certificates.html">Выдача справок</a>
                 </div>
                 <h1 class="nav__h1">Портал самообслуживания</h1>
             </nav>
@@ -86,8 +87,8 @@
                         <form class="main__form" action="#" method="post">
                             <div class="main__form-manual">
                                 <div class="main__form-manual-title-info">
-                                    <p class="main__form-manual-title" >Экономика и финансы. Финансовое управление</p>
-                                    <p class="main__form-manual-info">Консультации по финансовым вопросам</p>
+                                    <p class="main__form-manual-title" >Управление персоналом. Выдача справок и копий</p>
+                                    <p class="main__form-manual-info">Предоставление документов по заявке</p>
                                 </div>
                                 <div class="main__form-manual-text">
                                     <div class="main__form-manual-support">
@@ -117,22 +118,31 @@
                             </div>
                             <div class="main__form-input-list">
                                 <div class="main__form-input-conteiner">
-                                    <p>Услуга</p>
+                                    <p>Услуга *</p>
                                     <div class="itc-select" id="select-1">
                                         <!-- Кнопка для открытия выпадающего списка -->
                                         <button type="button" class="itc-select__toggle" name="provider" value="" data-select="toggle" data-index="-1">Выберите услугу</button>
                                         <!-- Выпадающий список -->
                                         <div class="itc-select__dropdown">
                                           <ul class="itc-select__options">
-                                            <li class="itc-select__option" data-select="option" data-value="consultation-salary-project" data-index="0">Консультация по зарплатным проектам</li>
-                                            <li class="itc-select__option" data-select="option" data-value="consultation-mortgage" data-index="1">Консультация по ипотеке</li>
-                                            <li class="itc-select__option" data-select="option" data-value="consultation-upc" data-index="2">Консультация по УПЦ</li>
+                                            <li class="title-select-option"><span>Справки</span></li>
+                                            <li class="itc-select__option" data-select="option" data-value="inquiries" data-index="0">Предоставление документов по заявке</li>
+                                            <li class="itc-select__option" data-select="option" data-value="inquiries" data-index="1">Предоставление документов по заявке</li>
+                                            <li class="itc-select__option" data-select="option" data-value="inquiries" data-index="2">Предоставление документов по заявке</li>
+                                            <li class="itc-select__option" data-select="option" data-value="inquiries" data-index="3">Предоставление документов по заявке</li>
+                                            <li class="itc-select__option" data-select="option" data-value="inquiries" data-index="4">Предоставление документов по заявке</li>
+                                            <li class="title-select-option"><span>Копии</span></li>
+                                            <li class="itc-select__option" data-select="option" data-value="inquiries" data-index="5">Предоставление документов по заявке</li>
+                                            <li class="itc-select__option" data-select="option" data-value="inquiries" data-index="6">Предоставление документов по заявке</li>
+                                            <li class="itc-select__option" data-select="option" data-value="inquiries" data-index="7">Предоставление документов по заявке</li>
+                                            <li class="title-select-option"><span>Иное</span></li>
+                                            <li class="itc-select__option" data-select="option" data-value="inquiries" data-index="8">Предоставление документов по заявке</li>
                                           </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="main__form-input">
-                                    <label for="description-it">Комментарий</label>
+                                    <label for="description-it">Комментарий *</label>
                                     <textarea name="description-it" id="description-it" placeholder="Прокомментировать запрос"></textarea>
                                 </div>
                                 <div class="main__form-input">

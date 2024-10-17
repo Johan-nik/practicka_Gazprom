@@ -1,0 +1,17 @@
+.title-select-option {
+    padding: 16px 8px 0 8px;
+}
+
+.title-select-option span {
+    font-family: "Helios Cond", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 1px;
+    color: #00203399;
+    text-transform: uppercase;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #00426947;
+    display: block;
+    width: 100%;
+}

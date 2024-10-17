@@ -1,6 +1,6 @@
 .nav__menu-box {
     width: 220px;
-    height: 976px;
+    height: max-content;
     background-color: #006FAC;
     border-radius: 12px;
     display: flex;
@@ -23,8 +23,7 @@
     justify-content: left;
     width: 196px;
     gap: 10px;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin: 0 12px 12px 12px;
 }
 
 .nav__menu-logo {
